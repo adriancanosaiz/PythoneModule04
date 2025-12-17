@@ -1,6 +1,8 @@
 def read_file(path: str) -> str:
     file = open(path, "r")
-    return file.read()
+    content = file.read()
+    file.close()
+    return content
 
 
 def main() -> None:
